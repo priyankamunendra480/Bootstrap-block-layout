@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Blog</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        /* Custom Styles */
+        .blog-header {
+            background-color: #f8f9fa;
+            padding: 3rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        .card {
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .blog-footer {
+            background-color: #f8f9fa;
+            padding: 2rem 0;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyBlog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <header class="blog-header text-center">
+        <div class="container">
+            <h1 class="display-4">Welcome to MyBlog</h1>
+            <p class="lead text-muted">Discover amazing articles on tech, travel, and more!</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Blog Post 1 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/600/400?random=1" class="card-img-top" alt="Blog Post">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">Technology</span>
+                        <h5 class="card-title">The Future of AI</h5>
+                        <p class="card-text">Explore how AI is transforming industries worldwide.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on Jan 10, 2024
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/600/400?random=2" class="card-img-top" alt="Blog Post">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Travel</span>
+                        <h5 class="card-title">Best Travel Spots 2024</h5>
+                        <p class="card-text">Top destinations you shouldn't miss this year.</p>
+                        <a href="#" class="btn btn-outline-success">Read More</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on Jan 15, 2024
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/600/400?random=3" class="card-img-top" alt="Blog Post">
+                    <div class="card-body">
+                        <span class="badge bg-danger mb-2">Food</span>
+                        <h5 class="card-title">Healthy Eating in 2024</h5>
+                        <p class="card-text">Simple ways to improve your diet.</p>
+                        <a href="#" class="btn btn-outline-danger">Read More</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on Jan 20, 2024
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="blog-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>About MyBlog</h5>
+                    <p>A blog about technology, travel, food, and lifestyle.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-decoration-none">About</a></li>
+                        <li><a href="#" class="text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="me-3 text-dark"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-3 text-dark"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="me-3 text-dark"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="me-3 text-dark"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p class="mb-0">&copy; 2024 MyBlog. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
